@@ -1,3 +1,11 @@
 language: node_js
 node_js:
   - node
+after_success:
+  - ./deploy.sh
+branches:
+  only:
+    - master
+env:
+  global:
+    - secure:
