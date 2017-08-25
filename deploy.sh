@@ -7,6 +7,7 @@ TARGET_DIR=dist
 
 rm -rf "$TARGET_DIR"
 git clone -b "$TARGET_BRANCH" --depth 1 --quiet "$GH_URI" "$TARGET_DIR"
+rm -rf "$TARGET_DIR"/*
 cp -rf "$SOURCE_DIR"/* "$TARGET_DIR"
 
 cd "$TARGET_DIR"
