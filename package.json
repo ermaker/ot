@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack-dev-server --hot --host 0.0.0.0",
     "build": "NODE_ENV=production webpack -p --devtool cheap-module-source-map",
-    "test": "true"
+    "test": "npm run build"
   },
   "author": "Minwoo Lee <ermaker@gmail.com>",
   "license": "MIT",
